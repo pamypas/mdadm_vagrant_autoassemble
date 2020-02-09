@@ -1,0 +1,1 @@
+# mdadm_vagrant_autoassemble
