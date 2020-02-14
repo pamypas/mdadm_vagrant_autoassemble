@@ -52,7 +52,7 @@ cp -R /boot/* /mnt
 umount /mnt
 umount /boot
 mount /dev/md0 /boot
-dracut --mdadmconf --force /boot/initramfs-$(uname –r).img $(uname –r)
+dracut --mdadmconf --force /boot/initramfs-$(uname -r).img $(uname -r)
 ```
 
 Давайте начнем переносить корневой раздел и собирать рейд
