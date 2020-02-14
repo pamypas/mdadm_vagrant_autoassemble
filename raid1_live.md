@@ -29,6 +29,11 @@ t
 fd
 w
 ```
+Добавим модуль ядра
+
+```
+modprobe raid1
+```
 
 Собираем рейд с пропуском первого диска
 
@@ -43,7 +48,7 @@ mdadm --detail --scan > /etc/mdadm.conf
 ```
 mkfs.ext2 /dev/md0
 mount /dev/md0 /mnt
-cp -R /boot /mnt
+cp -R /boot/* /mnt
 umount /mnt
 umount /boot
 mount /dev/md0 /boot
